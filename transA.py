@@ -37,8 +37,8 @@ def wiki(serch,lang):
 	print("res>>>>"+str(debugres))
 	if len(resde)!=0:
 		try:
-			resultat=wikipedia.summary(	','.join(resde[1])-"u", sentences=3)
-			print(">>>>>>>!!!!!"+''.join(resde[1]-"u"))
+			resultat=wikipedia.summary(	''.join(resde[1][1:]), sentences=3)
+			print(">>>>>>>!!!!!"+''.join(resde[1][1:]))
 		except wikipedia.exceptions.DisambiguationError as e:
 			print (e.options[0])
 	else:
