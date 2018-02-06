@@ -23,7 +23,7 @@ child4.text="main char introduced"
 active=child
 
 while True:
-	print("Check Out test!!!!!!!!!!")
+	print("Check Out test!!!!!!!%%%!!!")
 	doc=etree.fromstring(etree.tostring(plot))
 	outpp=etree.tostring(doc)
 	xxml =  xml.dom.minidom.parseString(outpp)
